@@ -51,3 +51,12 @@
   
 - We can check if local repository is connected with any remote repository
   - git remote -v
+  
+## Using SSH to Connect with GitHub
+- Command to generate ssh keys
+  - ssh-keygen -t rsa -b 4096
+- Goto the directory where key files are generated. Copy contents of file *id_rsa.pub* which public key file.
+- Goto the github.com account, Select *Settings* -> *SSH and GPG keys* -> *New SSH key* page
+- Add title, paste copied public key and click on *Add SSH key* button.
+- Next you can test the SSH connection with command
+  - ssh -T git@github.com
