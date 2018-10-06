@@ -74,3 +74,7 @@
 - If there is conflict then user has to do manual merge with mergetool
   - git mergetool --tool=emerge
 
+## Archiving Repositories
+- You can mark non-active repositories as read-only with github feature **Archiving Repository**
+- It adds a warning message at top as "This repository has been archived by the owner. It is now read-only."
+- You cannot open an issue or pull requests - because of the repository is read-only.
