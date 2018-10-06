@@ -78,3 +78,21 @@
 - You can mark non-active repositories as read-only with github feature **Archiving Repository**
 - It adds a warning message at top as "This repository has been archived by the owner. It is now read-only."
 - You cannot open an issue or pull requests - because of the repository is read-only.
+
+## Branching, Merging, and Pull Requests
+- list all the branches present with command which also highlights current branch we are working now
+  - git branch
+- create a new branch of name **dev** with command
+  - git branch dev
+- switch to the newly created branch using
+  - git checkout dev
+- create a new branch and switch to it can be done by using single command
+  - git checkout -b “new-branch”
+- make some changes to new branch and commit those changes
+  - git commit -m “Some changes are made in new branch”
+- with below command newly created branch is pushed to remote repository where new branch is created to track our local branch
+  -git push -u origin new-branch
+
+- Newly created branch can be merged with creating a **pull request** in github.
+- The changes from pull request can be merged into master branch if any collaborator who has privilege approved it.
+
