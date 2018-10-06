@@ -87,11 +87,11 @@
 - switch to the newly created branch using
   - git checkout dev
 - create a new branch and switch to it can be done by using single command
-  - git checkout -b “new-branch”
+  - git checkout -b "new-branch"
 - make some changes to new branch and commit those changes
-  - git commit -m “Some changes are made in new branch”
+  - git commit -m "Some changes are made in new branch"
 - with below command newly created branch is pushed to remote repository where new branch is created to track our local branch
-  -git push -u origin new-branch
+  - git push -u origin new-branch
 
 - Newly created branch can be merged with creating a **pull request** in github.
 - The changes from pull request can be merged into master branch if any collaborator who has privilege approved it.
@@ -108,10 +108,12 @@
 - Now logs can be shown pretty readable with command
   - git log --online --graph --decorate -all
 - Annotated tags can be added with command to point specific commit id
-  - git tag -a v0.1 -m “0.1 release” a6b446e
-  - git tag -a v0.2 -m “0.2 release” c3039bf
+  - git tag -a v0.1 -m "0.1 release" a6b446e
+  - git tag -a v0.2 -m "0.2 release" c3039bf
 - Tags can be pushed from local to remote repository with command
   - git push --tags
-
-
-
+- Delete tag locally
+  - git tag -d "stable"
+  - git tag -d "v0.2"
+- If we try to push the deletion of tag to remote, tag will be removed from remote repository too.
+  - git push origin :v0.2
