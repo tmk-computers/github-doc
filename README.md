@@ -96,3 +96,22 @@
 - Newly created branch can be merged with creating a **pull request** in github.
 - The changes from pull request can be merged into master branch if any collaborator who has privilege approved it.
 
+## Working with Tags
+- logs can be displayed with command
+  - git  log
+- list of tags can be displayed with command
+  - git tag
+- new tag can be added to a branch with below command which adds a new tag with name "stable" to master branch
+  - git  tag stable master
+- now we can list tags created with below command 
+  - git tag
+- Now logs can be shown pretty readable with command
+  - git log --online --graph --decorate -all
+- Annotated tags can be added with command to point specific commit id
+  - git tag -a v0.1 -m “0.1 release” a6b446e
+  - git tag -a v0.2 -m “0.2 release” c3039bf
+- Tags can be pushed from local to remote repository with command
+  - git push --tags
+
+
+
