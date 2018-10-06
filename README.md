@@ -117,3 +117,7 @@
   - git tag -d "v0.2"
 - If we try to push the deletion of tag to remote, tag will be removed from remote repository too.
   - git push origin :v0.2
+
+## Creating a New Release on GitHub
+- Main difference between tag & release is release can also have release notes and other attachments such as binary files or compressed files
+- You can create a release on github at code -> releases
