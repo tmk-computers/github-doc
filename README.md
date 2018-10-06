@@ -60,3 +60,17 @@
 - Add title, paste copied public key and click on *Add SSH key* button.
 - Next you can test the SSH connection with command
   - ssh -T git@github.com
+  
+## Fetching and Pulling from remote repository
+- With below command you can get the changes to local git database. But these changes are not affected to the project directory of local repository
+  - git fetch
+- To affect all the fetched changes you can run command
+  - git merge
+- fetch and merge all the changes can also be done with single command
+  - git pull
+- If there is only change present in remote repository then **git pull** does fast forword merge.
+- But if changes are done at both local and remote repositories then based on **conflict** present or not git pull takes separate actions.
+- If there is no conflict then git pull creates automatic merge and then performs  a new commit for merge usually called as “merge commit”
+- If there is conflict then user has to do manual merge with mergetool
+  - git mergetool --tool=emerge
+
