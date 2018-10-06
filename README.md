@@ -92,6 +92,10 @@
   - git commit -m "Some changes are made in new branch"
 - with below command newly created branch is pushed to remote repository where new branch is created to track our local branch
   - git push -u origin new-branch
+- locally you can merge **new-branch** to **master** with command
+  - git merge new-branch
+- If there is conflict then user has to do manual merge with mergetool
+  - git mergetool --tool=emerge
 
 - Newly created branch can be merged with creating a **pull request** in github.
 - The changes from pull request can be merged into master branch if any collaborator who has privilege approved it.
